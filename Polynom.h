@@ -37,11 +37,11 @@ public:
     }
 
     Polynom operator + (Polynom const &polynom) {
-        return this->length + polynom.length + this->extent + polynom.extent;
+        return Polynom(this->length + polynom.length, this->extent + polynom.extent);
     }
 
     Polynom operator - (Polynom const &polynom) {
-        return (this->length - polynom.length) + (this->extent - polynom.extent);
+        return Polynom(this->length - polynom.length, this->extent - polynom.extent);
     }
 
     Polynom operator * (Polynom const &polynom) {

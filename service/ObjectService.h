@@ -42,7 +42,7 @@ public:
 
     template <typename E>
     T findAverage(E obj1, E obj2, E obj3) {
-        E result = (obj1 + obj2 + obj3) / 3;
+        E result = (obj1 + obj2 + obj3); /// 3;
         return result;
     }
 

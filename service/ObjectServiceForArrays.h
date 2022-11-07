@@ -11,6 +11,7 @@ using namespace std;
 
 template <class T>
 class ObjectServiceForArrays {
+public:
     template <typename E>
     T findMax(E object[], int length) {
         E maxObject = object[0];
