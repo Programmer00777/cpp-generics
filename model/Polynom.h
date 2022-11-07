@@ -10,7 +10,7 @@
 using namespace std;
 
 template <class T>
-class Polynom {
+class Polynom : public Object<T> {
 private:
     T length;
     T extent;
@@ -67,7 +67,7 @@ public:
         else false;
     }
 
-    void toString() {
+    void toString() override {
         cout << "Polynom:" << endl;
         cout << "Length: " << length << endl;
         cout << "Extent: " << extent << endl;

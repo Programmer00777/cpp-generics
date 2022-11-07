@@ -6,11 +6,12 @@
 #define LAB4_FRACTION_H
 
 #include <iostream>
+#include "Object.h"
 
 using namespace std;
 
 template <class T>
-class Fraction {
+class Fraction : public Object<T> {
 private:
     T numerator;
     T denominator;
@@ -72,7 +73,7 @@ public:
 
     }
 
-    void toString() {
+    void toString() override {
         cout << "Fraction:" << endl;
         cout << numerator << endl;
         cout << "---" << endl;

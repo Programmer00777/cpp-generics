@@ -10,7 +10,7 @@
 using namespace std;
 
 template <class T>
-class Prism {
+class Prism : public Object<T> {
 private:
     T height;
     T bottomBase;
@@ -79,7 +79,7 @@ public:
         else false;
     }
 
-    void toString() {
+    void toString() override {
         cout << "Prism:" << endl;
         cout << "Height: " << height << endl;
         cout << "Bottom base: " << bottomBase << endl;

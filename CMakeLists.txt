@@ -3,4 +3,4 @@ project(lab4)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lab4 main.cpp Fraction.h Polynom.h Prism.h service/ObjectService.h service/ObjectServiceForArrays.h)
+add_executable(lab4 main.cpp model/Fraction.h model/Polynom.h model/Prism.h service/ObjectService.h service/ObjectServiceForArrays.h utils/ProgramRunner.h model/Object.h utils/RandomObjectGenerator.h)
